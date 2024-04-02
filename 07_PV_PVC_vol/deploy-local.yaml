@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: busy-multi
+  labels:
+    app: busy-multi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: busy-multi
+  template:
+    metadata:
+      labels:
+        app: busy-multi
+    spec:
+      volumes:
+      - name: my-vol
+        persistentVolumeClaim:
+          claimName: local-pvc
+      containers:
+      - name: busybox
+        image: busybox
+        volumeMounts:
+        - name: my-vol
+          mountPath: /output
+        command: ['sh', '-c', 'while true; do echo "Hello!" >> /output/test.txt; sleep 5; done']
+      - name: multitool
+        image: wbitt/network-multitool
+        volumeMounts:
+        - name: my-vol
+          mountPath: /input
+        command: ['sh', '-c', 'sleep infinity']
+        

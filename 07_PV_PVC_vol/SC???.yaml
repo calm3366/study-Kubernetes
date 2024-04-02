@@ -1,0 +1,13 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: nfs-csi
+provisioner: disk-csi-driver.mks.ycloud.io
+parameters:
+  server: 62.84.113.48
+  share: /srv/nfs
+reclaimPolicy: Delete
+volumeBindingMode: Immediate
+# mountOptions:
+#   - hard
+#   - nfsvers=4.1

@@ -1,0 +1,26 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: example
+  annotations:
+    # nginx.ingress.kubernetes.io/rewrite-target: / # подменяет запрос пользователя на "/"
+    nginx.ingress.kubernetes.io/ssl-redirect: "false" # отменяет редирект на https
+    # nginx.ingress.kubernetes.io/ingress.class: public
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: 
+      http:
+        paths:
+          - pathType: Prefix
+            backend:
+              service:
+                name: nginx
+                port:
+                  number: 80
+            path: /
+  # This section is only required if TLS is to be enabled for the Ingress
+  tls:
+    - hosts:
+      - example.com
+      secretName: tls-secret

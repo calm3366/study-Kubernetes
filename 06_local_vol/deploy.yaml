@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: busy-multi
+  labels:
+    app: busy-multi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: busy-multi
+  template:
+    metadata:
+      labels:
+        app: busy-multi
+    spec:
+      volumes:
+      - name: vol
+        hostPath:
+          path: /var/data
+      containers:
+      - name: busybox
+        image: arm64v8/busybox
+        volumeMounts:
+        - name: vol
+          mountPath: /output
+        # command: ['sh', '-c', 'for i in {1..100}; do echo Hello! > /output/success.txt; sleep 5; done']
+        command: ['sh', '-c', 'while true; do echo "Hello!" >> /output/test.txt; sleep 5; done']
+        # command: ['sh', '-c', 'sleep infinity']
+      - name: multitool
+        image: wbitt/network-multitool
+        volumeMounts:
+        - name: vol
+          mountPath: /input
+        command: ['sh', '-c', 'sleep infinity']
+        

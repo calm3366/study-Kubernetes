@@ -3,3 +3,6 @@
 по какому неймингу связаны PV и PVC ? только по "storageClassName:" ? А если PV несколько с одинаковым storageClassName, а я хочу к конкретной PV сделать обращение?
 
 Не нашел в интернете где директория CA сертификатов microk8s, устаноленная через Homebew на MacOS ? На убунту все корректно - /var/snap/microk8s/current/certs/
+
+отличия StatefulSet и деплоймент
+

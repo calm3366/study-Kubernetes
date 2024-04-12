@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: app
+  name: multitool-back
+  labels:
+    app: multitool-back
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: multitool-back
+  template:
+    metadata:
+      labels:
+        app: multitool-back
+    spec:
+      containers:
+      - name: multitool
+        image: wbitt/network-multitool

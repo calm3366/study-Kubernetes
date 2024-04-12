@@ -1,0 +1,15 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-fr-to-back
+spec: 
+  podSelector: 
+    matchLabels:
+      app: multitool-back
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          app: multitool-front
+  policyTypes:
+  - Ingress

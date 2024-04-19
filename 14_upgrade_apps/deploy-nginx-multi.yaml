@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-m
+  annotations:
+    kubernetes.io/change-cause: "nginx image 1.20"
+spec:
+  replicas: 5
+  revisionHistoryLimit: 10 # кол-во макс ревизий репликасет
+  strategy:
+    rollingUpdate:
+      maxSurge: 5 # кол-во макс подов, превышающих общее кол-во реплик
+      maxUnavailable: 0 # кол-во макс недоступных подов
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.20
+      - name: multitool
+        image: wbitt/network-multitool
+        env:
+        - name: HTTP_PORT
+          value: "1180"
+        - name: HTTPS_PORT
+          value: "11443"

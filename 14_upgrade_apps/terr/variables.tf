@@ -51,16 +51,16 @@ variable "vms_resources" {
   type = map(any)
   default = {
     "cores" = {
-      web = 2
+      web = 4
     }
     "memory" = {
-      web = 2
+      web = 4
     }
     "core_fraction" = {
-      web = 5
+      web = 20
     }
     "size" = {
-      web = 20
+      web = 40
     }
   }
 }

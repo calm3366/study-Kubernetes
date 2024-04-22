@@ -19,7 +19,7 @@
 
 ![!\[Alt text\](<img/!\[Alt text\](<img/5.png>)>)](<img/5.png>)
 
-![!\[Alt text\](<img/!\[Alt text\](<img/6.png>)>)](<img/6.png>)
+<!-- ![!\[Alt text\](<img/!\[Alt text\](<img/6.png>)>)](<img/6.png>) -->
 
 
 

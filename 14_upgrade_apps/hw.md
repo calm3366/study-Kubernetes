@@ -17,9 +17,11 @@
 
 ### Задание 3  Создать Canary deployment
 
+
+![!\[Alt text\](<img/!\[Alt text\](<img/5-1.png>)>)](<img/5-1.png>)
+
 ![!\[Alt text\](<img/!\[Alt text\](<img/5.png>)>)](<img/5.png>)
 
-<!-- ![!\[Alt text\](<img/!\[Alt text\](<img/6.png>)>)](<img/6.png>) -->
 
 
 

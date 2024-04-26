@@ -17,10 +17,16 @@
 
 ### Задание 3  Создать Canary deployment
 
+- Кластер развернут через Managed Service for Kubernetes
+- Все манифесты задеплоил в неймспейс `app` (на скрине видно), но по http://158.160.157.239/bgc - 503 ошибка
+- [work2/Deployment_blue.yaml](work2/Deployment_blue.yaml) 
+- [work2/Deployment_canary.yaml](work2/Deployment_canary.yaml) 
+- [work2/gateway.yaml](work2/gateway.yaml) 
+- [work2/Virtual_service_blue_canary.yaml](work2/Virtual_service_blue_canary.yaml) 
 
-![!\[Alt text\](<img/!\[Alt text\](<img/5-1.png>)>)](<img/5-1.png>)
 
-![!\[Alt text\](<img/!\[Alt text\](<img/5.png>)>)](<img/5.png>)
+
+![!\[Alt text\](<img/!\[Alt text\](<img/6.png>)>)](<img/6.png>)
 
 
 

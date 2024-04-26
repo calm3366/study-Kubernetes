@@ -18,14 +18,14 @@ spec:
         host: blue-green-canary
         port:
           number: 8080
-        subset: version-green
-      weight: 90
+        subset: version-blue
+      weight: 10
     - destination:
         host: blue-green-canary
         port:
           number: 8080
-        subset: version-blue
-      weight: 10
+        subset: version-canary
+      weight: 90
   - match:
     - uri:
         prefix: /api
@@ -36,11 +36,11 @@ spec:
         host: blue-green-canary
         port:
           number: 8080
-        subset: version-green
-      weight: 90
+        subset: version-blue
+      weight: 10
     - destination:
         host: blue-green-canary
         port:
           number: 8080
-        subset: version-blue
-      weight: 10
+        subset: version-canary
+      weight: 90

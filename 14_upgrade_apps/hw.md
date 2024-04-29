@@ -18,6 +18,7 @@
 ### Задание 3  Создать Canary deployment
 
 - Кластер развернут через Managed Service for Kubernetes
+- Все объекты Istio создаются автоматически в т.ч. istio-ingressgateway с портами " 15021:30563/TCP,80:30532/TCP,443:31856/TCP "
 - Все манифесты задеплоил в неймспейс `app` (на скрине видно), но по http://158.160.157.239/bgc - 503 ошибка
 - [work2/Deployment_blue.yaml](work2/Deployment_blue.yaml) 
 - [work2/Deployment_canary.yaml](work2/Deployment_canary.yaml) 

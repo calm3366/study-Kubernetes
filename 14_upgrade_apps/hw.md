@@ -19,22 +19,23 @@
 
 - Кластер развернут через Managed Service for Kubernetes
 - Все объекты Istio создаются автоматически в т.ч. istio-ingressgateway с портами " 15021:30563/TCP,80:30532/TCP,443:31856/TCP "
-- Все манифесты задеплоил в неймспейс `app` (на скрине видно), но по http://158.160.157.239/bgc - 503 ошибка
-- [work2/Deployment_blue.yaml](work2/Deployment_blue.yaml) 
-- [work2/Deployment_canary.yaml](work2/Deployment_canary.yaml) 
-- [work2/gateway.yaml](work2/gateway.yaml) 
-- [work2/Virtual_service_blue_canary.yaml](work2/Virtual_service_blue_canary.yaml) 
+
+- [Deployment_blue.yaml](work2/Deployment_blue.yaml) 
+- [Deployment_canary.yaml](work2/Deployment_canary.yaml) 
+- [gateway.yaml](work2/gateway.yaml) 
+- [Virtual_service_blue_canary.yaml](work2/Virtual_service_blue_canary.yaml) 
+- [Destination_rule.yaml](work2/Destination_rule.yaml) 
+- [service.yaml](work2/service.yaml) 
 
 
 
-![!\[Alt text\](<img/!\[Alt text\](<img/8.png>)>)](<img/8.png>)
+http://158.160.157.239/bgc :
 
-![!\[Alt text\](<img/!\[Alt text\](<img/9.png>)>)](<img/9.png>)
+![!\[Alt text\](<img/!\[Alt text\](<img/12.png>)>)](<img/12.png>)
 
-![!\[Alt text\](<img/!\[Alt text\](<img/10.png>)>)](<img/10.png>)
+![!\[Alt text\](<img/!\[Alt text\](<img/13.png>)>)](<img/13.png>)
 
-![!\[Alt text\](<img/!\[Alt text\](<img/11.png>)>)](<img/11.png>)
-
+![!\[Alt text\](<img/!\[Alt text\](<img/14.png>)>)](<img/14.png>)
 
 
 

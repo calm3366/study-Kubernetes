@@ -1,3 +1,5 @@
+Ссылка на домашнее задание - [github](https://github.com/netology-code/kuber-homeworks/blob/main/1.3/1.3.md)
+
 ### Задание 1. Создать Deployment и обеспечить доступ к репликам приложения из другого Pod
 
 - не курлиться из пода multitool другие поды по имени nginx : curl: (6) Could not resolve host: nginx

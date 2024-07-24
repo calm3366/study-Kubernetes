@@ -1,3 +1,5 @@
+Ссылка на домашнее задание - [github](https://github.com/netology-code/kuber-homeworks/blob/main/1.5/1.5.md)
+
 ### Задание 1. Создать Deployment приложений backend и frontend
 [deploy.yaml](deploy.yaml) 
 

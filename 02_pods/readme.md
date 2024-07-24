@@ -1,3 +1,5 @@
+Ссылка на домашнее задание - [github](https://github.com/netology-code/kuber-homeworks/blob/main/1.2/1.2.md)
+
 ### Задание 1. Создать Pod с именем hello-world
 
 - gcr.io/kubernetes-e2e-test-images/echoserver:2.2 не работает на ARM поэтому заменил на ealen/echo-server

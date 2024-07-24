@@ -1,3 +1,5 @@
+Ссылка на домашнее задание - [github](https://github.com/netology-code/kuber-homeworks/blob/main/3.2/3.2.md)
+
 ## Установка Kubernetes
 ### Задание 1. Установить кластер k8s с 1 master node
 

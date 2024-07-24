@@ -1,3 +1,5 @@
+Ссылка на домашнее задание - [github](https://github.com/netology-code/kuber-homeworks/blob/main/2.3/2.3.md)
+
 ## «Конфигурация приложений»
 ### Задание 1. Создать Deployment приложения и решить возникшую проблему с помощью ConfigMap. Добавить веб-страницу
 [deploy-nginx-multi.yaml](deploy-nginx-multi.yaml) 

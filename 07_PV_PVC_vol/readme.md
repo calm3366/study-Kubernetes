@@ -1,3 +1,5 @@
+Ссылка на домашнее задание - [github](https://github.com/netology-code/kuber-homeworks/blob/main/2.2/2.2.md)
+
 ## «Хранение в K8s. Часть 2»
 ### Задание 1. 
 [deploy-local.yaml](deploy-local.yaml) 

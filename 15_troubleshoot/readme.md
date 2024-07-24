@@ -1,3 +1,5 @@
+Ссылка на домашнее задание - [github](https://github.com/netology-code/kuber-homeworks/blob/main/3.5/3.5.md)
+
 ## Troubleshooting
 ### Задание При деплое приложение web-consumer не может подключиться к auth-db. Необходимо это исправить
 

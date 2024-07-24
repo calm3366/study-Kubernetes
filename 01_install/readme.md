@@ -1,3 +1,4 @@
+Ссылка на домашнее задание - [github](https://github.com/netology-code/kuber-homeworks/blob/main/1.1/1.1.md)
 
 ![!\[Alt text\](<img/!\[Alt text\](<img/1.png>)>)](<img/1.png>)
 
